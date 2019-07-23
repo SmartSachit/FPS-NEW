@@ -4,7 +4,7 @@ using UnityEngine.Networking;
 public class HostGame : MonoBehaviour {
 
 	[SerializeField]
-	private uint roomSize = 6;
+	private uint roomSize = 20;
 
 	private string roomName;
 
