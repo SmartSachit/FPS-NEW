@@ -4,7 +4,7 @@ using System.Collections;
 
 [RequireComponent(typeof(PlayerSetup))]
 public class Player : NetworkBehaviour {
-
+    public int points = 0;
 	[SyncVar]
 	private bool _isDead = false;
 	public bool isDead
@@ -195,5 +195,8 @@ public class Player : NetworkBehaviour {
 		GameObject _gfxIns = (GameObject)Instantiate(spawnEffect, transform.position, Quaternion.identity);
 		Destroy(_gfxIns, 3f);
 	}
-
+    private void OnGUI()
+    {
+        GUI.Label(new Rect(10,10,100,20), "Score : " + points);
+    }
 }
