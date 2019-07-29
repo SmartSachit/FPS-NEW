@@ -13,8 +13,8 @@ public class CoinScript : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         print("[CoinScript.cs] triggered");
-        print(other.name);
-        if (other.name == "Player" + counter)
+        print(other.tag);
+        if (other.tag == "Player" + counter)
         {
             other.GetComponent<Player>().points++;
             Destroy(gameObject);
