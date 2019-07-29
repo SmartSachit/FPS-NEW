@@ -9916,6 +9916,9 @@ MonoBehaviour:
     reloadTime: 1
     graphics: {fileID: 199728, guid: ed705c92b28f65f4f99f5b76f9f51ecc, type: 3}
   isReloading: 0
+  throwForce: 50
+  grenadePrefab: {fileID: 4185071811325007495, guid: fd6b12606ae8e18418a0fac72ad60bbc,
+    type: 3}
 --- !u!114 &114000011184352806
 MonoBehaviour:
   m_ObjectHideFlags: 0
