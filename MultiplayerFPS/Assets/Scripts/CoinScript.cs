@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CoinScript : MonoBehaviour
 {
-    int counter = 1;
+  int counter = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +14,7 @@ public class CoinScript : MonoBehaviour
     {
         print("[CoinScript.cs] triggered");
         print(other.tag);
-        if (other.tag == "Player" + counter)
+        if (other.tag == "Player")
         {
             other.GetComponent<Player>().points++;
             Destroy(gameObject);
@@ -23,7 +23,7 @@ public class CoinScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    if ("Player" + counter == "1")
+    if (counter >= 1)
     {
         counter++;
     }
