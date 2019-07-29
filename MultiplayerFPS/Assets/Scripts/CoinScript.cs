@@ -14,7 +14,7 @@ public class CoinScript : MonoBehaviour
     {
         print("[CoinScript.cs] triggered");
         print(other.name);
-        if (other.name == "Player 1")
+        if (other.name == "Player" + counter)
         {
             other.GetComponent<Player>().points++;
             Destroy(gameObject);
@@ -27,5 +27,5 @@ public class CoinScript : MonoBehaviour
     {
         counter++;
     }
-  }
+    }
 }
