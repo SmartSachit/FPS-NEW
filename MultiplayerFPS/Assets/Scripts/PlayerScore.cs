@@ -67,7 +67,7 @@ public class PlayerScore : MonoBehaviour {
 	void Update() {
 			if (player.kills == 20)
 	{
-		 SceneManager.LoadScene(sceneBuildIndex:3);
+		 SceneManager.LoadScene(sceneBuildIndex:2);
 	}
 	}
 }

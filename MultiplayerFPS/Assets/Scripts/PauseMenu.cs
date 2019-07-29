@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.Networking.Match;
-
+using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour {
 
 	public static bool IsOn = false;
@@ -19,5 +19,5 @@ public class PauseMenu : MonoBehaviour {
 		networkManager.matchMaker.DropConnection(matchInfo.networkId, matchInfo.nodeId, 0, networkManager.OnDropConnection);
 		networkManager.StopHost();
     }
-
 }
+
