@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Player))]
 public class PlayerScore : MonoBehaviour {
@@ -63,4 +64,10 @@ public class PlayerScore : MonoBehaviour {
 		UserAccountManager.instance.SendData(newData);
 	}
 
+	void Update() {
+			if (player.kills == 20)
+	{
+		 SceneManager.LoadScene(sceneBuildIndex:3);
+	}
+	}
 }
