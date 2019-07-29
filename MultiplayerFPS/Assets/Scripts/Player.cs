@@ -83,13 +83,13 @@ public class Player : NetworkBehaviour {
 	//void Update()
 	//{
 	//	if (!isLocalPlayer)
-	//		return;
+		//	return;
 
 	//	if (Input.GetKeyDown(KeyCode.K))
 	//	{
-	//		RpcTakeDamage(99999);
+		//	RpcTakeDamage(99999);
 	//	}
-	//}
+//	}
 
 	[ClientRpc]
     public void RpcTakeDamage (int _amount, string _sourceID)
