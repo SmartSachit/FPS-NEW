@@ -197,6 +197,6 @@ public class Player : NetworkBehaviour {
 	}
     private void OnGUI()
     {
-        GUI.Label(new Rect(10,10,100,20), "Score : " + points);
+        GUI.Label(new Rect(100,100,100,200), "Score : " + points);
     }
 }
